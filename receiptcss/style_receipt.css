@@ -1,0 +1,74 @@
+﻿.header-top{    font-family: 'Times New Roman'; padding-bottom:10px;}
+.header-top .img1{ height: 100px;
+    width: 123px; margin: 0 auto;}
+.header-top h1{font-weight:bold;    font-size: 28px;}
+.header-top p{font-weight:bold; font-size:12px;line-height:20px;}
+
+.btm-content h2{ font-size: 14px; font-weight:bold;}
+.btm-content h3{ font-size: 15px; font-weight:bold; border-bottom:1px solid #aaa; padding-bottom:15px;}
+.receipt-content {margin-bottom:-10px;}
+.btm-content .table>tbody>tr{ border-top: 1px solid #d1d1d1;}
+.btm-content .table>tbody>tr>td {
+    border-top: #aaa;
+    text-align: center;
+	font-size:12px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.top-details .table {
+        width: 93%;
+    margin: 0px 10px;
+    border: 1px solid #aaa;
+}
+.bottom-details .table {
+       width: 93%;
+    margin: 0px 10px;
+    border: 1px solid #aaa;
+}
+
+.name{margin-bottom:30px;}
+.pay-detail{margin-bottom:0px;}
+
+.terms h3 {
+    font-size: 15px; font-weight:bold; border-bottom:1px solid #aaa; padding-bottom:15px; margin-left:13px;
+}
+.terms ul {
+    padding: 10px 26px;
+      
+    /* border: 1px solid #aaa; */
+    margin: 0px;
+    font-size: 12px;
+	
+}
+.terms ul li {
+    padding-bottom: 6px;
+}
+
+.butn {
+    margin: 10px 70px;
+}
+
+
+
+/*********hall ticket***********/
+.tbl-header{    margin-top: 31px;
+    margin-left: 50px;}
+.tbl-header tr>.ht-tbl-head-col-right{padding-bottom: 9px;padding-right:5px;text-align:right;font-weight:bold;}
+.btm-content .table>tbody>tr>.ht-col-right{
+	text-align: right;
+    width: 40%;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 12px 0px;
+}
+.table-bordered>tbody>tr>td{border:none;}
+.btm-content .table>tbody>tr>.ht-col1-right{
+	width: 50%;
+	text-align: right;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 12px 0px;
+}
+.btm-content .table>tbody>tr>.ht-col1-left{
+	text-align: left;
+}

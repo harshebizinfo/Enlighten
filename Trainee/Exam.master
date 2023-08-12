@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Trainee/TraineeMainMaster.Master" AutoEventWireup="true" CodeBehind="Exam.master.cs" Inherits="LMS.Trainee.Exam" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .GridviewDiv {
+            font-size: 100%;
+            font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Arial, Helevetica, sans-serif;
+            color: #303933;
+        }
+
+        .headerstyle {
+            color: #FFFFFF;
+            border-right-color: #abb079;
+            border-bottom-color: #abb079;
+            background-color: #8fcccc;
+            padding: 0.5em 0.5em 0.5em 0.5em;
+            text-align: center;
+            max-height: 25px;
+            min-height: 25px;
+        }
+
+        .vertical {
+            border-left: 1px solid grey;
+            height: 60px;
+            position: absolute;
+            /*left: 50%;*/
+        }
+        .abc{
+            background-color: #e9ecef;
+            border-radius: 10px;
+            color:black;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <%-- <script type="text/javascript">
+
+        if (window.location.pathname == '/Admin/AddLearner1.aspx') {
+            debugger;
+            $('#ss').removeClass('active');
+            $('#ss1').addClass('active');
+            $('#section-group').removeClass('active');
+            $('#section-group2').addClass('active');
+            //window.location.href = "AddTeacher.aspx";
+        }</script>--%>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="wrapper d-flex align-items-stretch">
+                    <div id="content">
+                        <div class="container-fluid">
+                            <div style="height: 90px">
+                                <div class="row">
+                                    <nav class="navbar navbar-expand-lg navbar-light col-sm-12" style="padding: 0px; padding-left: 0px; background-color: #bae7e3">
+                                        <div style="padding-top: 10px; height: 80px">
+                                            <ul class="navbar-nav" id="childtb">
+                                                <li>&nbsp;&nbsp;&nbsp;</li>
+                                                <li class="nav-item" id="page1" runat="server">
+                                                    <center><i class="fa fa-file fa-1x"></i></center>
+                                                    <a class="nav-link" href="ExamList.aspx"><small>Exam List</small></a>
+                                                </li>
+                                                <li class="nav-item" id="page2" runat="server">
+                                                    <center><i class="fa fa-list-ul fa-1x"></i></center>
+                                                    <a class="nav-link" href="ExamSettings.aspx"><small>Exam Settings</small></a>
+                                                </li>
+                                                <li>
+                                                    <div class="vertical"></div>
+                                                </li>
+                                                <li class="nav-item" id="page3" runat="server">
+                                                    <center><i class="fa fa-user-plus fa-1x"></i></center>
+
+                                                    <a class="nav-link" href="CreateQuestionPaper.aspx"><small>Add Qusetion Paper</small></a>
+                                                </li>
+                                                <li class="nav-item" id="page4" runat="server">
+                                                    <center><i class="fa fa-user-plus fa-1x"></i></center>
+
+                                                    <a class="nav-link" href="CheckQuestionPaper.aspx"><small>Check Qusetion Paper</small></a>
+                                                </li>
+                                                <li class="nav-item" id="page5" runat="server">
+                                                    <center><i class="fa fa-user-plus fa-1x"></i></center>
+
+                                                    <a class="nav-link" href="DeleteQuestionLog.aspx"><small>Delete Question Log</small></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="breadcrumb col-sm-12">
+                                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="true" />
+                                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator=" > " RenderCurrentNodeAsLink="false">
+                                    </asp:SiteMapPath>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

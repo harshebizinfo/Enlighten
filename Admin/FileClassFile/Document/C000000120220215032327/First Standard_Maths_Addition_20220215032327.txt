@@ -1,0 +1,33 @@
+1	adas-kdhp-wqo
+1b	zbm-fjuf-usg
+2a	jmz-estw-tmi
+2b	jce-bznk-iuq  
+3a	syg-xzwv-oyz
+3b	vet-kmhn-mgr
+4a	gue-crzd-eyi
+4b	rhq-arar-sbs
+5a	jvg-dmte-nme
+5b	raw-ssee-cwm
+6a	chi-prtz-anp
+6b	dak-vhrd-efh
+7	esp-wiyq-sem
+8	ybu-dauu-zog
+9	gwb-xvxr-iua
+10	pzq-ruzi-idm	done till here
+srkg A	oth-ymno-npi
+Srkg B	gjn-ymgx-vsq
+JrkgA	dev-kujj-nfd
+jrkg B
+Nursery	tad-pwbz-ktm
+
+sanju likhare installed in his daughter mobile
+
+
+Helm operational 3 days 
+
+
+sqlcmd -d bpadmin -E -i Bpidcopy.SQL -o OUTPUTFILE.TXT 
+
+OSQL -E -i C:\Users\Shweta\Bpidcopy.SQ
+
+sqlcmd -S DESKTOP-RALBFLT\SQLEXPRESS -E

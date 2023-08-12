@@ -1,0 +1,235 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMainMaster.master.cs" Inherits="LMS.Admin.AdminMainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>LMS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <%--  <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-colors.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-rtl.min.css">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-icons.min.css">--%>
+    <%--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="../Select/select2.css" rel="stylesheet" />
+    <script src="../Select/select2.js"></script>--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+    <style type="text/css">
+        .abc {
+            /*background-color: #e9ecef;
+            border-radius: 10px;*/
+            color: black;
+            /*font-weight: bold;
+            max-height: 60px;*/
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container-fluid  h-25">
+                <div style="height: 30px">
+                    <div class="row">
+                        <div class="col-sm-1">
+                            <%--<button type="button" id="sidebarCollapse">--%>
+                            <span id="sidebarCollapse">
+                                <i class="fa fa-bars fa-1x"></i>
+                                <span class="sr-only">Toggle Menu</span>
+                            </span>
+                            <%--</button>--%>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="d-flex flex-row-reverse" style="padding-bottom:20px">
+                                <div>
+                                    <button runat="server" id="btnRun" onserverclick="functionName" class="btn btn-mini" title="Search">
+                                        <i class="fa fa-sign-out"></i>Sign Out
+                                    </button>
+                                </div>
+                                <div>
+                                    <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server" style="border: 0px solid #ced4da;" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
+                                </div>
+                                <div>
+                                    <asp:Label ID="Label1" runat="server" Text="Label" CssClass="form-control" style="border: 0px solid #ced4da;"></asp:Label>
+                                </div>
+                            </div>
+                        </div>
+                        <%--<div class="col-sm-1 justify-content-end">
+                                    <i class="fa fa-user-circle-o "></i>
+                        </div>--%>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper d-flex align-items-stretch">
+                <nav id="sidebar">
+                    <ul class="list-unstyled components">
+                        <li  id="page1" runat="server">
+                            <a href="Dashboard.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-home fa-1x"></i>
+                                        <br />
+                                        <small><b>Home</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page2" runat="server">
+                            <a href="GroupList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-university fa-1x"></i>
+                                        <br />
+                                        <small><b>Group</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <%--<li>
+                            <a href="UserList1.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-user fa-1x"></i>
+                                        <br />
+                                        <small><b>User</b></small></center>
+                                </div>
+                            </a>
+                        </li>--%>
+
+                        <li id="page3" runat="server">
+                            <a href="TraineeList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-address-book  fa-1x"></i>
+                                        <br />
+                                        <small><b>Teacher</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page4" runat="server">
+                            <a href="LearnerList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-male  fa-1x"></i>
+                                        <br />
+                                        <small><b>Student</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                         <li id="page5" runat="server">
+                            <a href="ViewTraineeAttendance.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-list-ul fa-1x"></i>
+                                        <br />
+                                        <small><b>Attendance</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <%-- <li>
+                            <a href="#">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-user-plus fa-1x"></i>
+                                        <br />
+                                        <small><b>Role</b></small></center>
+                                </div>
+
+                            </a>
+                        </li>--%>
+                        <li id="page6" runat="server">
+                            <a href="DepartmentStandard.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-folder-open fa-1x"></i>
+                                        <br />
+                                        <small>Department</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page7" runat="server">
+                            <a href="AddDivision.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-list-alt fa-1x"></i>
+                                        <br />
+                                        <small>Division</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page8" runat="server">
+                            <a href="SubjectList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-folder-open fa-1x"></i>
+                                        <br />
+                                        <small><b>Course</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page9" runat="server">
+                            <a href="LessonList1.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-newspaper-o fa-1x"></i>
+                                        <br />
+                                        <small><b>Lesson</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page10" runat="server">
+                            <a href="VehicleModeList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-cab fa-1x"></i>
+                                        <br />
+                                        <small><b>Transport</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="page11" runat="server">
+                            <a href="FeeGroup.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-inr fa-1x"></i>
+                                        <br />
+                                        <small><b>Fees</b></small></center>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Page Content  -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12" style="padding: 0px; padding-left: 0px">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="../js/jquery.min.js"></script>
+                <script src="../js/popper.js"></script>
+                <script src="../js/bootstrap.min.js"></script>
+                <script src="../js/main.js"></script>
+                <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<Table><tr><td colspan='7' align='center'><font size='7'>Lesson List</font></td></tr>
+                                        <tr><td colspan='7'></td></tr></Table><div>
+	<table cellspacing="0" rules="all" class="table table-bordered" border="1" id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1" style="border-collapse:collapse;text-align:center">
+		<tr style="color:White;background-color:#006699;">
+			<th scope="col">Standard / Department</th><th scope="col">Course / Subject</th><th scope="col">Lesson</th><th scope="col">Status</th><th scope="col">Check</th><th scope="col">Delete</th><th scope="col">Action</th>
+		</tr><tr>
+			<td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbldepartmentname_0">First Standard</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblsubjectname_0">Maths</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbllessontitle_0">Addition</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblIsActive_0">Active</span>
+                        </td><td class="columnwidth" align="center">
+                                 True
+                             </td><td class="columnwidth" align="center">
+                                 False
+                             </td><td class="columnwidth">
+                                <i class="fa fa-pencil-square-o" style="color:navy;font-size:25px"></i>
+                                
+                            </td>
+		</tr><tr>
+			<td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbldepartmentname_1">First Standard</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblsubjectname_1">Drawing</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbllessontitle_1">Drawing</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblIsActive_1">Active</span>
+                        </td><td class="columnwidth" align="center">
+                                 True
+                             </td><td class="columnwidth" align="center">
+                                 False
+                             </td><td class="columnwidth">
+                                <i class="fa fa-pencil-square-o" style="color:navy;font-size:25px"></i>
+                                
+                            </td>
+		</tr><tr>
+			<td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbldepartmentname_2">First Standard</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblsubjectname_2">Mixed Control</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbllessontitle_2">all lesson</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblIsActive_2">Active</span>
+                        </td><td class="columnwidth" align="center">
+                                 True
+                             </td><td class="columnwidth" align="center">
+                                 False
+                             </td><td class="columnwidth">
+                                <i class="fa fa-pencil-square-o" style="color:navy;font-size:25px"></i>
+                                
+                            </td>
+		</tr><tr>
+			<td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbldepartmentname_3">Second Standard</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblsubjectname_3">Social Science</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbllessontitle_3">Ancient History</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblIsActive_3">Active</span>
+                        </td><td class="columnwidth" align="center">
+                                 True
+                             </td><td class="columnwidth" align="center">
+                                 False
+                             </td><td class="columnwidth">
+                                <i class="fa fa-pencil-square-o" style="color:navy;font-size:25px"></i>
+                                
+                            </td>
+		</tr><tr>
+			<td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbldepartmentname_4">Ten Standard</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblsubjectname_4">Tenth Algebra</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lbllessontitle_4">Indices</span>
+                        </td><td class="columnwidth" align="left">
+                            <span id="ContentPlaceHolder1_ContentPlaceHolder2_GridView1_lblIsActive_4">Active</span>
+                        </td><td class="columnwidth" align="center">
+                                 True
+                             </td><td class="columnwidth" align="center">
+                                 False
+                             </td><td class="columnwidth">
+                                <i class="fa fa-pencil-square-o" style="color:navy;font-size:25px"></i>
+                                
+                            </td>
+		</tr>
+	</table>
+</div><Table><tr><td colspan='7'></td></tr><tr><td colspan='3' align='left'><b>Report By :</b>Client2 Client2</td><td></td><td colspan='3' align='right'><b>Date :</b>03-03-2022</td></tr></Table>

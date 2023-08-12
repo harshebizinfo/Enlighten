@@ -1,0 +1,175 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LearnerMaster.master.cs" Inherits="LMS.Learner.LearnerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>LMS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="../css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="container-fluid h-25">
+                <div style="height: 30px">
+                    <div class="row">
+                        <div class="col-sm-1">
+
+                            <%--<button type="button" id="sidebarCollapse">--%>
+                            <span id="sidebarCollapse">
+                                <i class="fa fa-bars fa-1x"></i>
+                                <span class="sr-only">Toggle Menu</span>
+                            </span>
+                            <%--</button>--%>
+                        </div>
+                        <div class="col-sm-11">
+                            <div class="d-flex flex-row-reverse">
+                                <div>
+                                    <button runat="server" id="btnRun" onserverclick="functionName" class="btn btn-mini" title="Search">
+                                        <i class="fa fa-sign-out"></i>Sign Out
+                                    </button>
+                                </div>
+                                <div>
+                                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" CssClass="form-control" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList></div>
+                                <div>
+                                    <asp:Label ID="Label1" runat="server" Text="Label" CssClass="form-control"></asp:Label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper d-flex align-items-stretch">
+                <nav id="sidebar">
+
+                    <ul class="list-unstyled components">
+                        <li class="active">
+                            <a href="Dashboard.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-bar-chart fa-1x"></i>
+                                        <br />
+                                        <small>Dashboard</small></center>
+                                </div>
+
+                            </a>
+                        </li>
+                         <li>
+                            <a href="Profile.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-address-book fa-1x"></i>
+                                        <br />
+                                        <small>Profile</small></center>
+                                </div>
+                            </a>
+                        </li>
+                         <li id="file" runat="server">
+                            <a href="DriveDocumentFiles.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-file fa-1x"></i>
+                                        <br />
+                                        <small>File</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="eventdoc" runat="server">
+                            <a href="Event.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-calendar fa-1x"></i>
+                                        <br />
+                                        <small>Event</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Exam.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-book fa-1x"></i>
+                                        <br />
+                                        <small>Exam</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="AssignmentList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-newspaper-o fa-1x"></i>
+                                        <br />
+                                        <small>Assignment</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="PayExamFee.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-inr fa-1x"></i>
+                                        <br />
+                                        <small>Payment</small></center>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ComplaintList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-clipboard fa-1x"></i>
+                                        <br />
+                                        <small>Complaint</small></center>
+                                </div>
+                            </a>
+                        </li>
+                         <li>
+                            <a href="LearnerNoticeList.aspx">
+                                <div>
+                                    <center>
+                                        <i class="fa fa-clipboard fa-1x"></i>
+                                        <br />
+                                        <small>Notice</small></center>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Page Content  -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12" style="padding: 0px; padding-left: 0px">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script src="../js/jquery.min.js"></script>
+                <script src="../js/popper.js"></script>
+                <script src="../js/bootstrap.min.js"></script>
+                <script src="../js/main.js"></script>
+                <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

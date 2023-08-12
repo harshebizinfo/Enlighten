@@ -1,0 +1,55 @@
+ebiz pay school same as LMS
+
+Learning Management SYstem
+
+DPS ebizpay
+
+bulk of student upload
+WebBased
+
+1) LMS
+2) EbizPay Fee structure
+
+
+Image recognition
+
+
+https://www.sweetprocess.com/learning-management-system/
+https://www.paradisosolutions.com/what-is-lms
+https://raccoongang.com/blog/what-does-lms-mean-education/
+https://raccoongang.com/blog/how-structure-your-online-course/
+
+
+https://colorlib.com/wp/template/nurture/
+https://www.c-sharpcorner.com/article/create-dynamic-form-in-asp-net-and-get-values-from-that/
+
+Module
+User Management
+Course Management
+Reporting Management
+Roles Management
+Trainee Management
+
+Feature
+Course Management 	-- for manage course,CRUD questions of course
+Multi tenant		--manage every client as a new tenant
+Analise and Reporting 	-- generate report with all required filters
+
+
+flow of test
+auditor organizze new classroom and trainee will give exam and 
+result will be generated if result is passed then allow to proceed and 
+auditee will sign and confirm that the report is checked and if trainee will fail then they have 2 or 3 more attept
+
+Roles :-
+Super Admin (the person whoes going to manage all CRUD operation of tenant,roles,responsibilities,features)
+
+Admin (this will be the tenant user who will going to manage the
+ course,questions,result and reports,teacher,student,fees)
+
+Teacher/Instructor (course,questions,result and reports 
+monitor courses, manage reviews, answer student questions, enrollments, and run relevant reports for insights. You will be able to mark courses as ‘completed’ for students who have completed the courses)
+
+Student/Learner role (give exam,read cource topic detail)
+in dashboard it will shows the cources on which they have applied
+and no. of test given and pending

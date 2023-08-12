@@ -1,0 +1,71 @@
+super_admin
+	superdash
+	pgconfiguration.aspx
+
+
+Client--> ClassFile
+	BOL
+	DAL
+
+
+
+btnpaynow.Enabled = false;
+
+
+ protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(CheckBox1.Checked==true)
+            {
+                btnpaynow.Enabled = true;
+            }
+            else
+            {
+                btnpaynow.Enabled = false;
+            }
+            
+        }
+
+
+USE [Ebiz_admin]
+GO
+/****** Object:  StoredProcedure [dbo].[Getpgdetails]    Script Date: 19-10-2021 05:33:13 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[Getpgdetails](@clientid int)
+  as
+  begin
+  select a.*,a.loginname,a.password,b.gateway_name,c.clientname,c.paymentgateway,a.merchantid,a.responsepage,a.ReqHashKey,a.ResHashKey,a.ReqAESKey,a.ResAESKey from [pg_tables] a inner join [dbo].[Payment_gateway_master] b on a.pgid=b.pid inner join client c on c.id=a.clientid where a.clientid=@clientid
+  end
+
+
+USE [Ebiz_admin]
+GO
+/****** Object:  StoredProcedure [dbo].[Insertpglogindetails]    Script Date: 19-10-2021 03:25:20 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+  ALTER procedure [dbo].[Insertpglogindetails](@pgid int ,@clientid int,@loginname varchar(max),@pwd varchar(max),@mid varchar(150),@key varchar(250),@imgname varchar(250),@reqHashKey nvarchar(max),@resHashKey nvarchar(max),@reqAESKey nvarchar(max),@resAESKey nvarchar(max))
+  as
+  begin
+  insert into [pg_tables]([pgid],[clientid],[loginname],[password],[merchantid],[keyid],[status],pglogo,[date],ReqHashKey,ResHashKey,ReqAESKey,ResAESKey) values(@pgid,@clientid,@loginname,@pwd,@mid,@key,1,@imgname,CURRENT_TIMESTAMP,@reqHashKey,@resHashKey,@reqAESKey,@resAESKey)
+  update client set paymentgateway=@pgid,status=1 where id=@clientid
+  end
+
+USE [Ebiz_admin]
+GO
+/****** Object:  StoredProcedure [dbo].[updatepgclient]    Script Date: 19-10-2021 03:19:37 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER procedure [dbo].[updatepgclient](@clientid int,@pgid int,@loginid varchar(max),@pwd varchar(max),@mid varchar(150),@key varchar(250),@imgname varchar(250),@reqHashKey nvarchar(max),@resHashKey nvarchar(max),@reqAESKey nvarchar(max),@resAESKey nvarchar(max))
+  as
+  begin
+  update [pg_tables] set loginname=@loginid,password=@pwd,pgid=@pgid,merchantid=@mid,keyid=@key,pglogo=@imgname,updatedate=CURRENT_TIMESTAMP,ReqHashKey=@reqHashKey,ResHashKey=@resHashKey,ReqAESKey=@reqAESKey,ResAESKey=@resAESKey where clientid=@clientid
+  update client set paymentgateway=@pgid where id=@clientid
+  end
+
+

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="LMS"  description="">
+    <siteMapNode url="" title="Super Admin" description="">
+      <siteMapNode url="~/SuperAdmin/Dashboard.aspx" title="Dashboard"  description="Super Admin Dashboard Page">
+      </siteMapNode>
+      <siteMapNode url="~/SuperAdmin/ClientList.aspx"  title="Client List"  description="Client List Page" >
+        <siteMapNode url="~/SuperAdmin/AddClient.aspx" title="Add Client"  description="Add CLient Page" />
+        <siteMapNode url="~/SuperAdmin/EditClient.aspx" title="Edit Client"  description="Edit CLient Page" />
+      </siteMapNode>
+      <siteMapNode url="~/SuperAdmin/PaymentConfiguration.aspx"  title="Payment Configuration List"  description="Payment Configuration List Page" >
+        <siteMapNode url="~/SuperAdmin/AddPaymentConfiguration.aspx" title="Add Payment Configuration"  description="Add Payment Configuration Page" />
+        <siteMapNode url="~/SuperAdmin/EditPaymentConfiguration.aspx" title="Edit Payment Configuration"  description="Edit Payment Configuration Page" />
+        <siteMapNode url="~/SuperAdmin/reverification.aspx" title="Re - Verification"  description="Payment Reverification Page" />
+        <siteMapNode url="~/SuperAdmin/PaidPaymentList.aspx" title="Payment List"  description="Payment List Page" />
+      </siteMapNode>
+      <siteMapNode url="~/SuperAdmin/ServiceList.aspx"  title="Service List"  description="Service List Page" >
+        <siteMapNode url="~/SuperAdmin/AddService.aspx" title="Add Service"  description="Add Service Page" />
+      </siteMapNode>
+      <siteMapNode url="~/SuperAdmin/EnquiryList.aspx"  title="Enquiry List"  description="Enquiry List Page" >
+      </siteMapNode>
+      <siteMapNode url="~/SuperAdmin/MigrateStudentList.aspx"  title="Migrate Student List"  description="Migrate Student List Page" >
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Admin Home"  description="">
+      <siteMapNode url="~/Admin/Dashboard.aspx" title="Dashboard"  description="Admin Dashboard Page">
+      </siteMapNode>
+      <siteMapNode url="~/Admin/UserList1.aspx" title="User"  description="User List Page">
+      </siteMapNode>
+      <siteMapNode url="~/Admin/LearnerList.aspx" title="Learner List"  description="Learner List Page">
+        <siteMapNode url="~/Admin/EditLearner.aspx" title="Edit Learner"  description="Edit Learner Page" />
+        <siteMapNode url="~/Admin/AddLearner1.aspx" title="Add Learner"  description="Add Learner Page" />
+        <siteMapNode url="~/Admin/UploadStudent.aspx" title="Upload Learner"  description="Upload Learner Page" />
+        <!--<siteMapNode url="~/Admin/StudentAdmissionReport.aspx" title="Addmission Report"  description="Learner Addmission Report Page" />-->
+      </siteMapNode>
+      <siteMapNode url="~/Admin/TraineeList.aspx"  title="Trainee List"  description="Trainee List Page" >
+        <siteMapNode url="~/Admin/EditTrainee.aspx" title="Edit Trainee"  description="Edit Trainee Page" />
+        <siteMapNode url="~/Admin/AddTrainee1.aspx" title="Add Trainee"  description="Add Trainee Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/StreamList.aspx" title="Stream List"  description="Stream list Page">
+        <siteMapNode url="~/Admin/DepartmentStandard.aspx" title="Department/Standard"  description="Department list Page" />
+        <siteMapNode url="~/Admin/StudentInDepartmentList.aspx" title="Student In Department"  description="List Learner In Department">
+          <siteMapNode url="~/Admin/AddLearnerInDepartment.aspx" title="Add Student In Department"  description="Add Learner In Department" />
+          <siteMapNode url="~/Admin/EditLearnerInDepartment.aspx" title="Edit Student In Department"  description="Edit Learner In Department" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/AddDivision.aspx" title="Division List"  description="Division Page">
+        <siteMapNode url="~/Admin/ClassDivisionAllotment.aspx" title="Division to Department"  description="Add Learner In Department" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/SubjectList.aspx" title="Subject List"  description="Subject Page">
+        <siteMapNode url="~/Admin/CourseORSubjectList.aspx" title="Assign Subject to Department"  description="Add Subject In Department" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/LessonList1.aspx" title="Lesson List"  description="Lesson List Page">
+        <siteMapNode url="~/Admin/AddNewLesson.aspx" title="Add Lesson"  description="Add Lesson Page" >
+          <siteMapNode url="~/Admin/AddNewSession.aspx" title="Add Session"  description="Add Session Page" />
+          <siteMapNode url="~/Admin/UploadVideo.aspx" title="Add Video"  description="Add Video Page" />
+          <siteMapNode url="~/Admin/UploadFile.aspx" title="Add Files"  description="Add File Page" />
+          <!--<siteMapNode url="~/Admin/AssignmentList.aspx" title="Assignment List"  description="Assignment List Page" />-->
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/GroupList.aspx" title="Group List"  description="Group List Page">
+        <siteMapNode url="~/Admin/AssignGroup.aspx" title="Assign Group"  description="Assign Group Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/VehicleModeList.aspx" title="Transport Mode"  description="Transport Mode Page">
+        <siteMapNode url="~/Admin/VehicleList.aspx" title="Vehicle List"  description="Vehicle List Page" />
+        <siteMapNode url="~/Admin/AddVehicle.aspx" title="Add Vehicle"  description="Add Vehicle Page" />
+        <siteMapNode url="~/Admin/EditVehicle.aspx" title="Edit Vehicle"  description="Edit Vehicle Page" />
+        <siteMapNode url="~/Admin/AreaMaster.aspx" title="Area List"  description="Area List Page" />
+        <siteMapNode url="~/Admin/TransportFee.aspx" title="Transport Fee List"  description="Transport Fee Page" />
+        <siteMapNode url="~/Admin/AreaVehicleMapping.aspx" title="Alloted Vehicle List"  description="Vehicle in Area Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/FeeGroup.aspx" title="Fee Group"  description="Fee Group Page">
+        <siteMapNode url="~/Admin/FeeNameMasterList.aspx" title="Fee Name List"  description="Fee Name List Page">
+          <siteMapNode url="~/Admin/AddFeeNameMaster.aspx" title="Add Fee Name"  description="Add Fee Name Page" />
+          <siteMapNode url="~/Admin/EditFeeNameMaster.aspx" title="Edit Fee Name"  description="Edit Fee Name Page" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/AddCategoryMaster.aspx" title="Category List"  description="Fee Category Page" />
+        <siteMapNode url="~/Admin/FeeMonthMaster.aspx" title="Month List"  description="Fee Month Page" />
+        <siteMapNode url="~/Admin/FeeType.aspx" title="Fee Type List"  description="Fee Type List Page">
+          <siteMapNode url="~/Admin/AddFeeType.aspx" title="Add Fee Type"  description="Add Fee Type Page" />
+          <siteMapNode url="~/Admin/EditFeeType.aspx" title="Edit Fee Type"  description="Edit Fee Type Page" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/FeeStructure.aspx" title="Fee Structure List"  description="Fee Structure List Page">
+          <siteMapNode url="~/Admin/AddFeeStructure.aspx" title="Add Fee Structure"  description="Add Fee Structure Page" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/AddFeeTypeStructure.aspx" title="Fee Type Structure"  description="Fee Type Structure Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/ViewTraineeAttendance.aspx" title="Trainee Attendance"  description="Attendance list Page">
+        <siteMapNode url="~/Admin/TakeTraineeAttendance.aspx" title="Take Attendance"  description="Take Attendance Page" />
+        <siteMapNode url="~/Admin/UpdateTraineeAttendance.aspx" title="Update Attendance"  description="Update Attendance Page" />
+        <siteMapNode url="~/Admin/ViewStudentAttendanceByAdmin.aspx" title="Student Attendance"  description="Student Attendance Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/NoticeList.aspx" title="Notice List"  description="Notice List Page">
+        <siteMapNode url="~/Admin/AssignNotice.aspx" title="Assign Notice"  description="Assign Notice Page" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Teacher Home"  description="">
+      <siteMapNode url="~/Trainee/Dashboard.aspx" title="Dashboard"  description="Trainee Dashboard Page">
+        <siteMapNode url="~/Trainee/AllAssignmentList.aspx" title="Assignment List"  description="Assignment List Page" />
+        <siteMapNode url="~/Trainee/AssignmentSubmitedByLearner.aspx" title="Submitted Assignment"  description="Submitted Assignment Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/Profile.aspx" title="Profile"  description="Trainee Profile Page">
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/StudentList.aspx" title="Student List"  description="Student list Page">
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/DepartmentStandard.aspx" title="Department/Standard"  description="Department list Page">
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/CourseList.aspx" title="Course"  description="Course list Page">
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/LessonList.aspx" title="Lesson List"  description="Lesson List Page">
+        <siteMapNode url="~/Trainee/AddLesson.aspx" title="Add Lesson"  description="Add Lesson Page">
+          <siteMapNode url="~/Trainee/AddNewSession.aspx" title="Add Session"  description="Add Session Page" />
+          <siteMapNode url="~/Trainee/UploadVideo.aspx" title="Add Video"  description="Add Video Page" />
+          <siteMapNode url="~/Trainee/UploadFile.aspx" title="Add Files"  description="Add File Page" />
+        </siteMapNode>
+        <siteMapNode url="~/Trainee/Session.aspx" title="Session"  description="Session Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/ExamList.aspx" title="Exam List"  description="Exam List Page">
+        <siteMapNode url="~/Trainee/ExamSettings.aspx" title="Exam Setting"  description="Exam Settings Page" />
+        <siteMapNode url="~/Trainee/EditExamDeatils.aspx" title="Edit Exam Setting"  description="Edit Exam Settings Page" />
+        <siteMapNode url="~/Trainee/CreateQuestionPaper.aspx" title="Create Question Paper"  description="Generate Question Paper Page" />
+        <siteMapNode url="~/Trainee/CheckQuestionPaper.aspx" title="List of Student Attempts Exam"  description="Check Question Paper Page">
+          <siteMapNode url="~/Trainee/CheckExamQuestionPaper.aspx" title="Check Exam Paper"  description="Generate Question Paper Page" />
+        </siteMapNode>
+        <siteMapNode url="~/Trainee/DeleteQuestionLog.aspx" title="Delete Question Log"  description="Delete Question Log Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/ViewStudentAttendance.aspx" title="View Attendance"  description="Attendance list Page">
+        <siteMapNode url="~/Trainee/TakeStudentAttendance.aspx" title="Take Attendance"  description="Take Attendance Page" />
+        <siteMapNode url="~/Trainee/UpdateStudentAttendance.aspx" title="Update Attendance"  description="Update Attendance Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Trainee/TraineeNoticeList.aspx" title="Notice List"  description="Notice List Page">
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Student Home"  description="">
+      <siteMapNode url="~/Learner/Dashboard.aspx" title="Dashboard"  description="Dashboard Page">
+      </siteMapNode>
+      <siteMapNode url="~/Learner/Profile.aspx" title="Profile"  description="Profile Page">
+      </siteMapNode>
+      <siteMapNode url="~/Learner/Event.aspx" title="Event"  description="Event Page">
+      </siteMapNode>
+      <siteMapNode url="~/Learner/DriveDocumentFiles.aspx" title="File"  description="File Page">
+        <siteMapNode url="~/Learner/YoutubeVideoFiles.aspx" title="View Video File"  description="View Video Page" />
+      </siteMapNode>
+      <siteMapNode url="~/Learner/Exam.aspx" title="Exam"  description="Exam Page">
+      </siteMapNode>
+      <siteMapNode url="~/Learner/AssignmentList.aspx" title="Assignment List"  description="Assignment List Page">
+        <siteMapNode url="~/Learner/UploadAssignmentFile.aspx" title="Upload Assignment"  description="Upload Assignment List" />
+      </siteMapNode>
+      <siteMapNode url="~/Learner/PayExamFee.aspx" title="Exam Fee"  description="Exam Fee Page">
+        <siteMapNode url="~/Learner/OnlinePaymentByStudent.aspx" title="Pay Fee"  description="Pay Academic Fee" />
+      </siteMapNode>
+      <siteMapNode url="~/Learner/LearnerNoticeList.aspx" title="Notice List"  description="Notice List Page">
+      </siteMapNode>
+      <siteMapNode url="~/Learner/ComplaintList.aspx" title="Complaint List"  description="Complaint List Page">
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="Help and Support Home"  description="">
+      <siteMapNode url="~/HelpAndSupport/Dashboard.aspx" title="Dashboard"  description="Dashboard Page">
+      </siteMapNode>
+      <siteMapNode url="~/HelpAndSupport/PendingIssueList.aspx" title="Pending Issue"  description="Pending Issue Page">
+        <siteMapNode url="~/HelpAndSupport/ResolvedIssueList.aspx" title="Resolved Issue"  description="Resolved Issue Page" />
+      </siteMapNode>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
