@@ -11,6 +11,7 @@ namespace LMS.Trainee
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["IsFirstScreen"] = "7";
             string activepage = Request.RawUrl;
             if (activepage.Contains("/Trainee/ViewStudentAttendance.aspx"))
             {

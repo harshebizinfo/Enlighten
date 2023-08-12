@@ -11,6 +11,7 @@ namespace LMS.Learner
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Session["IsFirstScreen"] = "4";
             string activepage = Request.RawUrl;
             if (activepage.Contains("/Learner/Exam.aspx"))
             {

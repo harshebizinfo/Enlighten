@@ -48,11 +48,61 @@ namespace LMS.Learner
                         file.Visible = false;
                         eventdoc.Visible = false;
                     }
+                    if (Session["IsFirstScreen"] == null)
+                    {
+                        Session["IsFirstScreen"] = "0";
+                    }
                 }
+                ActiveIcon();
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+        }
+        public void ActiveIcon()
+        {
+            //class="active"
+            string value=Session["IsFirstScreen"].ToString();
+            if (value == "0")
+            {
+                page1.Attributes.Add("class", "active");
+            }
+            else if (value == "1")
+            {
+                page2.Attributes.Add("class", "active");
+            }
+            else if (value == "2")
+            {
+                file.Attributes.Add("class", "active");
+            }
+            else if (value == "3")
+            {
+                eventdoc.Attributes.Add("class", "active");
+            }
+            else if (value == "4")
+            {
+                page5.Attributes.Add("class", "active");
+            }
+            else if (value == "5")
+            {
+                page6.Attributes.Add("class", "active");
+            }
+            else if (value == "6")
+            {
+                page7.Attributes.Add("class", "active");
+            }
+            else if (value == "7")
+            {
+                page8.Attributes.Add("class", "active");
+            }
+            else if (value == "8")
+            {
+                page9.Attributes.Add("class", "active");
+            }
+            else
+            {
+                page1.Attributes.Add("class", "active");
             }
         }
         protected void functionName(object sender, EventArgs e)

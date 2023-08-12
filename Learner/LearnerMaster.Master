@@ -57,7 +57,7 @@
                 <nav id="sidebar">
 
                     <ul class="list-unstyled components">
-                        <li class="active">
+                        <li id="page1" runat="server">
                             <a href="Dashboard.aspx">
                                 <div>
                                     <center>
@@ -68,7 +68,7 @@
 
                             </a>
                         </li>
-                         <li>
+                         <li id="page2" runat="server">
                             <a href="Profile.aspx">
                                 <div>
                                     <center>
@@ -98,7 +98,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li id="page5" runat="server">
                             <a href="Exam.aspx">
                                 <div>
                                     <center>
@@ -108,7 +108,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li id="page6" runat="server">
                             <a href="AssignmentList.aspx">
                                 <div>
                                     <center>
@@ -118,7 +118,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li id="page7" runat="server">
                             <a href="PayExamFee.aspx">
                                 <div>
                                     <center>
@@ -128,7 +128,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li id="page8" runat="server">
                             <a href="ComplaintList.aspx">
                                 <div>
                                     <center>
@@ -138,7 +138,7 @@
                                 </div>
                             </a>
                         </li>
-                         <li>
+                         <li id="page9" runat="server">
                             <a href="LearnerNoticeList.aspx">
                                 <div>
                                     <center>
