@@ -49,7 +49,7 @@ namespace LMS.Trainee
             dt = coursebll.GetCourseUnderDepartment(int.Parse(ddlDepartmentStandard.SelectedValue));
             ddlSubjectCourse.DataSource = dt;
             ddlSubjectCourse.DataBind();
-            ddlSubjectCourse.DataTextField = "CourseSubjectName";
+            ddlSubjectCourse.DataTextField = "SubjectName";
             ddlSubjectCourse.DataValueField = "Id";
             ddlSubjectCourse.DataBind();
             ddlSubjectCourse.Items.Insert(0, new ListItem("-- Select --", "0"));

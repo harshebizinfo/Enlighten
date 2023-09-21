@@ -87,6 +87,15 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.View ViewPersonalDetail;
 
         /// <summary>
+        /// RequiredFieldValidator14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator14;
+
+        /// <summary>
         /// txtFirstName control.
         /// </summary>
         /// <remarks>
@@ -94,6 +103,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+
+        /// <summary>
+        /// RequiredFieldValidator15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator15;
 
         /// <summary>
         /// txtLastName control.
@@ -105,6 +123,24 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.TextBox txtLastName;
 
         /// <summary>
+        /// RequiredFieldValidator16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator16;
+
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// txtContactNumber control.
         /// </summary>
         /// <remarks>
@@ -112,6 +148,24 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtContactNumber;
+
+        /// <summary>
+        /// RequiredFieldValidator17 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator17;
+
+        /// <summary>
+        /// RegularExpressionValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
 
         /// <summary>
         /// txtemail control.
@@ -141,6 +195,15 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.TextBox txtfathercontactNumber;
 
         /// <summary>
+        /// RequiredFieldValidator18 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator18;
+
+        /// <summary>
         /// txtpresentAddress control.
         /// </summary>
         /// <remarks>
@@ -150,6 +213,15 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.TextBox txtpresentAddress;
 
         /// <summary>
+        /// RequiredFieldValidator19 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator19;
+
+        /// <summary>
         /// txtpresentCity control.
         /// </summary>
         /// <remarks>
@@ -157,6 +229,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpresentCity;
+
+        /// <summary>
+        /// RequiredFieldValidator20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator20;
 
         /// <summary>
         /// txtpresentstate control.
@@ -195,6 +276,15 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.TextBox txtpermanentState;
 
         /// <summary>
+        /// RequiredFieldValidator21 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator21;
+
+        /// <summary>
         /// ddlGender control.
         /// </summary>
         /// <remarks>
@@ -204,6 +294,24 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.DropDownList ddlGender;
 
         /// <summary>
+        /// RequiredFieldValidator22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator22;
+
+        /// <summary>
+        /// RegularExpressionValidator3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator3;
+
+        /// <summary>
         /// txtadhaarnumber control.
         /// </summary>
         /// <remarks>
@@ -211,6 +319,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtadhaarnumber;
+
+        /// <summary>
+        /// RequiredFieldValidator23 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator23;
 
         /// <summary>
         /// txtpannumber control.
@@ -249,15 +366,6 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.View ViewEducation;
 
         /// <summary>
-        /// ddlEducationalTrainee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEducationalTrainee;
-
-        /// <summary>
         /// RequiredFieldValidator11 control.
         /// </summary>
         /// <remarks>
@@ -265,6 +373,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
+
+        /// <summary>
+        /// ddlEducationalTrainee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlEducationalTrainee;
 
         /// <summary>
         /// FileUpload1 control.
@@ -303,15 +420,6 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.View ViewExperience;
 
         /// <summary>
-        /// ddlExperienceTrainee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlExperienceTrainee;
-
-        /// <summary>
         /// RequiredFieldValidator12 control.
         /// </summary>
         /// <remarks>
@@ -319,6 +427,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator12;
+
+        /// <summary>
+        /// ddlExperienceTrainee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlExperienceTrainee;
 
         /// <summary>
         /// FileUpload2 control.
@@ -357,15 +474,6 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.View ViewDocuments;
 
         /// <summary>
-        /// ddlDocumentTrainee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDocumentTrainee;
-
-        /// <summary>
         /// RequiredFieldValidator13 control.
         /// </summary>
         /// <remarks>
@@ -373,6 +481,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator13;
+
+        /// <summary>
+        /// ddlDocumentTrainee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlDocumentTrainee;
 
         /// <summary>
         /// FileUpload3 control.
@@ -411,15 +528,6 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.View ViewBankAccount;
 
         /// <summary>
-        /// ddltrainee control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddltrainee;
-
-        /// <summary>
         /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
@@ -429,13 +537,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
-        /// txtBankName control.
+        /// ddltrainee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBankName;
+        protected global::System.Web.UI.WebControls.DropDownList ddltrainee;
 
         /// <summary>
         /// RequiredFieldValidator4 control.
@@ -447,13 +555,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
 
         /// <summary>
-        /// txtAccountNumber control.
+        /// txtBankName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAccountNumber;
+        protected global::System.Web.UI.WebControls.TextBox txtBankName;
 
         /// <summary>
         /// RequiredFieldValidator5 control.
@@ -465,13 +573,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
 
         /// <summary>
-        /// txtIFSCCode control.
+        /// txtAccountNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIFSCCode;
+        protected global::System.Web.UI.WebControls.TextBox txtAccountNumber;
 
         /// <summary>
         /// RequiredFieldValidator6 control.
@@ -483,13 +591,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
 
         /// <summary>
-        /// txtHolderName control.
+        /// txtIFSCCode control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtHolderName;
+        protected global::System.Web.UI.WebControls.TextBox txtIFSCCode;
 
         /// <summary>
         /// RequiredFieldValidator7 control.
@@ -501,13 +609,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
 
         /// <summary>
-        /// txtReAccountNumber control.
+        /// txtHolderName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtReAccountNumber;
+        protected global::System.Web.UI.WebControls.TextBox txtHolderName;
 
         /// <summary>
         /// RequiredFieldValidator8 control.
@@ -528,13 +636,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
-        /// txtReIFSCName control.
+        /// txtReAccountNumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtReIFSCName;
+        protected global::System.Web.UI.WebControls.TextBox txtReAccountNumber;
 
         /// <summary>
         /// RequiredFieldValidator9 control.
@@ -555,13 +663,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.CompareValidator CompareValidator2;
 
         /// <summary>
-        /// txtNickName control.
+        /// txtReIFSCName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNickName;
+        protected global::System.Web.UI.WebControls.TextBox txtReIFSCName;
 
         /// <summary>
         /// RequiredFieldValidator10 control.
@@ -571,6 +679,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
+
+        /// <summary>
+        /// txtNickName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtNickName;
 
         /// <summary>
         /// Button3 control.
@@ -600,15 +717,6 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.View ViewAssignStandard;
 
         /// <summary>
-        /// ddlUserName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlUserName;
-
-        /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
@@ -618,13 +726,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
-        /// ddlassigndepartmentStandard control.
+        /// ddlUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlassigndepartmentStandard;
+        protected global::System.Web.UI.WebControls.DropDownList ddlUserName;
 
         /// <summary>
         /// reqFavoriteColor control.
@@ -636,13 +744,13 @@ namespace LMS.Admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator reqFavoriteColor;
 
         /// <summary>
-        /// ddlassignCourseSubject control.
+        /// ddlassigndepartmentStandard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlassignCourseSubject;
+        protected global::System.Web.UI.WebControls.DropDownList ddlassigndepartmentStandard;
 
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -652,6 +760,15 @@ namespace LMS.Admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+
+        /// <summary>
+        /// ddlassignCourseSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlassignCourseSubject;
 
         /// <summary>
         /// Button15 control.

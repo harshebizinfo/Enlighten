@@ -17,7 +17,7 @@ namespace LMS.Admin
         DeptBLL deptbll = new DeptBLL();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 binddepartmentddl();
                 bindDivisionDDL();
@@ -75,15 +75,37 @@ namespace LMS.Admin
         }
         protected void Button9_Click(object sender, EventArgs e)
         {
-            var result = divisionBll.AssignClassDivisionAllotment(int.Parse(ddllessonDepartment.SelectedValue),int.Parse(ddlDivision.SelectedValue));
-            if(result>0)
+            int departmentId=int.Parse(ddllessonDepartment.SelectedValue);
+            int divisionId=int.Parse(ddlDivision.SelectedValue);
+            DataTable dt = new DataTable();
+            dt = divisionBll.GetClassDivisionAllotment();
+            Boolean isExists=false;
+            foreach (DataRow dr in dt.Rows)
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Division Alloted Sucessfully')", true);
-                getAllotedDivisionandDepartment();
+                int deptId=int.Parse(dr["deptId"].ToString());
+                int secId=int.Parse(dr["sectId"].ToString());
+                if (deptId == departmentId && secId == divisionId)
+                {
+                    isExists = true;
+                }
+            }
+
+            if (!isExists)
+            {
+                var result = divisionBll.AssignClassDivisionAllotment(int.Parse(ddllessonDepartment.SelectedValue),int.Parse(ddlDivision.SelectedValue));
+                if (result > 0)
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Division Alloted Sucessfully')", true);
+                    getAllotedDivisionandDepartment();
+                }
+                else
+                {
+                    ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Something went wrong')", true);
+                }
             }
             else
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Something went wrong')", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Department and Division already exists.')", true);
             }
         }
         protected void imgdeletebtn_Click(object sender, EventArgs e)

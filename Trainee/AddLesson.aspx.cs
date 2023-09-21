@@ -111,7 +111,7 @@ namespace LMS.Trainee
             dt = coursebll.GetCourseUnderDepartment(int.Parse(ddllessonDepartment.SelectedValue));
             ddllessonCourse.DataSource = dt;
             ddllessonCourse.DataBind();
-            ddllessonCourse.DataTextField = "CourseSubjectName";
+            ddllessonCourse.DataTextField = "SubjectName";
             ddllessonCourse.DataValueField = "Id";
             ddllessonCourse.DataBind();
             ddllessonCourse.Items.Insert(0, new ListItem("-- Select --", "0"));
@@ -488,7 +488,7 @@ namespace LMS.Trainee
             dt = coursebll.GetCourseUnderDepartment(int.Parse(ddlAssignmentDepartment.SelectedValue));
             ddlAssignmentCourse.DataSource = dt;
             ddlAssignmentCourse.DataBind();
-            ddlAssignmentCourse.DataTextField = "CourseSubjectName";
+            ddlAssignmentCourse.DataTextField = "SubjectName";
             ddlAssignmentCourse.DataValueField = "Id";
             ddlAssignmentCourse.DataBind();
             ddlAssignmentCourse.Items.Insert(0, new ListItem("-- Select --", "0"));
@@ -1467,7 +1467,7 @@ namespace LMS.Trainee
             dt = coursebll.GetCourseUnderDepartment(int.Parse(ddlassignmentdepartmentList.SelectedValue));
             ddlassignmentCourseList.DataSource = dt;
             ddlassignmentCourseList.DataBind();
-            ddlassignmentCourseList.DataTextField = "CourseSubjectName";
+            ddlassignmentCourseList.DataTextField = "SubjectName";
             ddlassignmentCourseList.DataValueField = "Id";
             ddlassignmentCourseList.DataBind();
             ddlassignmentCourseList.Items.Insert(0, new ListItem("-- Select --", "0"));

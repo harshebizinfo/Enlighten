@@ -121,7 +121,7 @@
                             <div class="col-sm-12" align="left" style="background-color: #bae7e3">
                                 <table>
                                     <tr>
-                                        <td height="50px"><span font-size="Medium" color="black"><b>Delete Lesson</b></span> </td>
+                                        <td height="50px"><span font-size="Medium" color="black"><b>Delete Alloted Division</b></span> </td>
                                     </tr>
                                 </table>
                             </div>

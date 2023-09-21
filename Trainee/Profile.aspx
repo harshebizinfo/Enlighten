@@ -424,7 +424,7 @@
                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="5px" CellPadding="3" ShowHeaderWhenEmpty="True" Width="80%">
                                         <Columns>
                                             <asp:BoundField HeaderText="Standard / Department" DataField="DepartmentStandardName" />
-                                            <asp:BoundField HeaderText="Course / Subject" DataField="CourseSubjectName" />
+                                            <asp:BoundField HeaderText="Course / Subject" DataField="SubjectName" />
                                         </Columns>
                                         <EmptyDataTemplate>
                                             <div align="center">No records found.</div>

@@ -34,11 +34,11 @@
                 <div class="col-sm-flex">
                     <asp:Button ID="btnExportToExcel" CssClass="btn btn-primary" runat="server" Text="Export to Excel" OnClick="btnExportToExcel_Click" />&nbsp;&nbsp;&nbsp;
                 </div>
-                <div class="col-sm-flex">
+                <%--<div class="col-sm-flex">
                     <asp:Button ID="btnListDelete" CssClass="btn btn-primary" runat="server" Text="Delete" OnClick="btnListDelete_Click" />&nbsp;&nbsp;&nbsp;
-                </div>
+                </div>--%>
                 <div class="col-md-flex">
-                    <asp:TextBox CssClass="form-control" ID="txtSearch" runat="server" placeholder="Enter Search Text" AutoPostBack="true" onkeyup="RefreshUpdatePanel();"></asp:TextBox>
+                    <asp:TextBox CssClass="form-control" ID="txtSearch" runat="server" placeholder="Enter Search Text"></asp:TextBox>
                 </div>
                 <div class="col-md-flex">
                     &nbsp;&nbsp;&nbsp;
@@ -111,7 +111,7 @@
                             <div class="col-sm-12" align="left" style="background-color: #bae7e3">
                                 <table>
                                     <tr>
-                                        <td height="50px"><span font-size="Medium" color="black"><b>Delete Course / Subject</b></span> </td>
+                                        <td height="50px"><span font-size="Medium" color="black"><b>Delete Learner</b></span> </td>
                                     </tr>
                                 </table>
                             </div>

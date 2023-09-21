@@ -50,7 +50,7 @@ namespace LMS.Trainee
             DataTable dt = new DataTable();
             dt = bll.GetExamListByDepartmentId(int.Parse(ddlDepartmentStandard.SelectedValue));
             DataView DataView = dt.DefaultView;
-            DataView.RowFilter = "CourseSubjectName LIKE '%" + search + "%'  OR DepartmentStandardName LIKE '%" + search + "%' OR ExamName LIKE '%" + search + "%'";
+            DataView.RowFilter = "SubjectName LIKE '%" + search + "%'  OR DepartmentStandardName LIKE '%" + search + "%' OR ExamName LIKE '%" + search + "%'";
             GridView1.DataSource = DataView;
             GridView1.DataBind();
             ViewState["data"] = dt;
@@ -382,7 +382,7 @@ namespace LMS.Trainee
             if (!string.IsNullOrEmpty(search))
             {
                 //DataView.RowFilter = "client_name LIKE '%" + search + "%' OR client_number LIKE '%" + search + "%'";
-                DataView.RowFilter = "CourseSubjectName LIKE '%" + search + "%'  OR DepartmentStandardName LIKE '%" + search + "%' OR ExamName LIKE '%" + search + "%'";
+                DataView.RowFilter = "SubjectName LIKE '%" + search + "%'  OR DepartmentStandardName LIKE '%" + search + "%' OR ExamName LIKE '%" + search + "%'";
             }
             GridView1.DataSource = DataView;
             GridView1.DataBind();
@@ -398,7 +398,7 @@ namespace LMS.Trainee
             if (!string.IsNullOrEmpty(search))
             {
                 //DataView.RowFilter = "client_name LIKE '%" + search + "%' OR client_number LIKE '%" + search + "%'";
-                DataView.RowFilter = "CourseSubjectName LIKE '%" + search + "%' OR DepartmentStandardName LIKE '%" + search + "%'  OR ExamName LIKE '%" + search + "%'";
+                DataView.RowFilter = "SubjectName LIKE '%" + search + "%' OR DepartmentStandardName LIKE '%" + search + "%'  OR ExamName LIKE '%" + search + "%'";
             }
             GridView1.DataSource = DataView;
             GridView1.DataBind();

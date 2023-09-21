@@ -86,7 +86,7 @@
                         <%--<asp:BoundField HeaderText="Course / Subject" DataField="CourseSubjectName" />--%>
                     <asp:TemplateField HeaderText="Course / Subject" >
                         <ItemTemplate>
-                            <asp:Label ID="lblsubjectname" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"CourseSubjectName") %>'></asp:Label>
+                            <asp:Label ID="lblsubjectname" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"SubjectName") %>'></asp:Label>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField HeaderText="Lesson" >
@@ -111,7 +111,7 @@
                         <%--<asp:BoundField HeaderText="Action" />--%>
                         <asp:TemplateField HeaderText="Action">
                             <ItemTemplate>
-                                <asp:LinkButton ID="LkB1" runat="server" Text="Edit" CssClass="btn btn-success"  CommandName="Edit" CommandArgument='<%# DataBinder.Eval(Container.DataItem,"Id") %>'></asp:LinkButton>
+                                <%--<asp:LinkButton ID="LkB1" runat="server" Text="Edit" CssClass="btn btn-success"  CommandName="EditRow" CommandArgument='<%# DataBinder.Eval(Container.DataItem,"Id") %>'></asp:LinkButton>--%>
                                 <asp:LinkButton ID="LkB2" runat="server" Text="Delete" CssClass="btn btn-danger" CommandName="DeleteRow" CommandArgument='<%# DataBinder.Eval(Container.DataItem,"Id") %>' OnClick="imgdeletebtn_Click"></asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>

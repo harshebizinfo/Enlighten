@@ -149,7 +149,7 @@ namespace LMS.Trainee
             var result = studentAttendancebll.UpdateStudentAttendance(addNewStudentAttendance);
             if (result > 0)
             {
-                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Attendance Added Successfully')", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Attendance Updated Successfully')", true);
             }
             else
             {

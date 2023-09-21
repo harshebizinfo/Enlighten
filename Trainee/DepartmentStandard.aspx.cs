@@ -302,6 +302,7 @@ namespace LMS.Trainee
         }
         private void ExportGridView()
         {
+            var userName = Session["FirstAndLastName"].ToString();
             string attachment = "attachment; filename=DepartmentList.xls";
             Response.ClearContent();
             Response.AddHeader("content-disposition", attachment);
@@ -309,7 +310,12 @@ namespace LMS.Trainee
             StringWriter sw = new StringWriter();
             HtmlTextWriter htw = new HtmlTextWriter(sw);
             GridView1.RenderControl(htw);
+            string headerTable = @"<Table><tr><td colspan='6' align='center'><font size='7'>Department List</font></td></tr>
+                                        <tr><td colspan='6'></td></tr></Table>";
+            Response.Write(headerTable);
             Response.Write(sw.ToString());
+            string footerTable = @"<Table><tr><td colspan='6'></td></tr><tr><td colspan='3' align='left'><b>Report By :</b>" + userName + "</td><td colspan='3' align='right'><b>Date :</b>" + DateTime.Now.ToString("dd-MM-yyyy") + "</td></tr></Table>";
+            Response.Write(footerTable);
             Response.End();
         }
         private void PrepareGridViewForExport(Control gv)

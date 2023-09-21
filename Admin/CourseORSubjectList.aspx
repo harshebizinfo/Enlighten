@@ -135,12 +135,12 @@
                         <%--<asp:BoundField HeaderText="Course / Subject" DataField="CourseSubjectName" />--%>
                         <asp:TemplateField HeaderText="Course / Subject">
                             <ItemTemplate>
-                                <asp:Label ID="lblSubjectname" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"CourseSubjectName") %>'></asp:Label>
+                                <asp:Label ID="lblSubjectname" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"SubjectName") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <asp:TemplateField HeaderText="Section">
                             <ItemTemplate>
-                                <asp:Label ID="lblSubjectname" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"Section") %>'></asp:Label>
+                                <asp:Label ID="lblSectionname" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"Section") %>'></asp:Label>
                             </ItemTemplate>
                         </asp:TemplateField>
                         <%--<asp:BoundField HeaderText="Is Active" DataField="IsActive" />--%>
